@@ -14,6 +14,8 @@
 		4C9384C029A6FA9F00430ACA /* Bridge1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9384BF29A6FA9F00430ACA /* Bridge1_0Tests.swift */; };
 		4C9384CA29A6FA9F00430ACA /* Bridge1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9384C929A6FA9F00430ACA /* Bridge1_0UITests.swift */; };
 		4C9384CC29A6FA9F00430ACA /* Bridge1_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9384CB29A6FA9F00430ACA /* Bridge1_0UITestsLaunchTests.swift */; };
+		4C9384E129A6FC9E00430ACA /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9384E029A6FC9E00430ACA /* FeedView.swift */; };
+		4C9384E429A7BC5800430ACA /* PostRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9384E329A7BC5800430ACA /* PostRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		4C9384C529A6FA9F00430ACA /* Bridge1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bridge1.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9384C929A6FA9F00430ACA /* Bridge1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge1_0UITests.swift; sourceTree = "<group>"; };
 		4C9384CB29A6FA9F00430ACA /* Bridge1_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge1_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C9384E029A6FC9E00430ACA /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		4C9384E329A7BC5800430ACA /* PostRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,10 @@
 		4C9384AD29A6FA9C00430ACA /* Bridge1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				4C9384DB29A6FC2500430ACA /* Extensions */,
+				4C9384DA29A6FC1E00430ACA /* Model */,
+				4C9384D929A6FC1500430ACA /* Service */,
+				4C9384D829A6FC0A00430ACA /* Core */,
 				4C9384AE29A6FA9C00430ACA /* Bridge1_0App.swift */,
 				4C9384B029A6FA9C00430ACA /* ContentView.swift */,
 				4C9384B229A6FA9F00430ACA /* Assets.xcassets */,
@@ -125,6 +133,76 @@
 				4C9384CB29A6FA9F00430ACA /* Bridge1_0UITestsLaunchTests.swift */,
 			);
 			path = Bridge1.0UITests;
+			sourceTree = "<group>";
+		};
+		4C9384D829A6FC0A00430ACA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4C9384DD29A6FC3B00430ACA /* Components */,
+				4C9384DC29A6FC3500430ACA /* Feed */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4C9384D929A6FC1500430ACA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4C9384DA29A6FC1E00430ACA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C9384DB29A6FC2500430ACA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4C9384DC29A6FC3500430ACA /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				4C9384DE29A6FC6700430ACA /* ViewModels */,
+				4C9384DF29A6FC7100430ACA /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		4C9384DD29A6FC3B00430ACA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4C9384E229A7BC4300430ACA /* Posts */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4C9384DE29A6FC6700430ACA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4C9384DF29A6FC7100430ACA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C9384E029A6FC9E00430ACA /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C9384E229A7BC4300430ACA /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				4C9384E329A7BC5800430ACA /* PostRowView.swift */,
+			);
+			path = Posts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +336,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C9384B129A6FA9C00430ACA /* ContentView.swift in Sources */,
+				4C9384E429A7BC5800430ACA /* PostRowView.swift in Sources */,
+				4C9384E129A6FC9E00430ACA /* FeedView.swift in Sources */,
 				4C9384AF29A6FA9C00430ACA /* Bridge1_0App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
