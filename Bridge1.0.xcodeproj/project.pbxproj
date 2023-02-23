@@ -16,6 +16,7 @@
 		4C9384CC29A6FA9F00430ACA /* Bridge1_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9384CB29A6FA9F00430ACA /* Bridge1_0UITestsLaunchTests.swift */; };
 		4C9384E129A6FC9E00430ACA /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9384E029A6FC9E00430ACA /* FeedView.swift */; };
 		4C9384E429A7BC5800430ACA /* PostRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9384E329A7BC5800430ACA /* PostRowView.swift */; };
+		4C9384E729A7D25600430ACA /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9384E629A7D25600430ACA /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		4C9384CB29A6FA9F00430ACA /* Bridge1_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge1_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4C9384E029A6FC9E00430ACA /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		4C9384E329A7BC5800430ACA /* PostRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowView.swift; sourceTree = "<group>"; };
+		4C9384E629A7D25600430ACA /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				4C9384DD29A6FC3B00430ACA /* Components */,
+				4C9384E529A7D24000430ACA /* MainTab */,
 				4C9384DC29A6FC3500430ACA /* Feed */,
 			);
 			path = Core;
@@ -203,6 +206,14 @@
 				4C9384E329A7BC5800430ACA /* PostRowView.swift */,
 			);
 			path = Posts;
+			sourceTree = "<group>";
+		};
+		4C9384E529A7D24000430ACA /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				4C9384E629A7D25600430ACA /* MainTabView.swift */,
+			);
+			path = MainTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +350,7 @@
 				4C9384E429A7BC5800430ACA /* PostRowView.swift in Sources */,
 				4C9384E129A6FC9E00430ACA /* FeedView.swift in Sources */,
 				4C9384AF29A6FA9C00430ACA /* Bridge1_0App.swift in Sources */,
+				4C9384E729A7D25600430ACA /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
