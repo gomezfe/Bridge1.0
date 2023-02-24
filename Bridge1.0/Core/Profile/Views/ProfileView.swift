@@ -59,7 +59,7 @@ struct ProfileView: View {
                         .offset(y: -85)
                         
                         //TODO: To be updated to initialize user statsView
-                        Text("UserStatsView")
+                        UserStatsView()
                             .offset(y: -80)
                         
                         HStack{

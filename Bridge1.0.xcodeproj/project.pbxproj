@@ -23,6 +23,10 @@
 		4C9384F729A7DBD200430ACA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9384F629A7DBD200430ACA /* ProfileView.swift */; };
 		4C9384F929A8075600430ACA /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9384F829A8075600430ACA /* FilterViewModel.swift */; };
 		4C9384FE29A8093A00430ACA /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9384FD29A8093A00430ACA /* UserRowView.swift */; };
+		4C93850329A838DE00430ACA /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93850229A838DE00430ACA /* SideMenuView.swift */; };
+		4C93850729A8390200430ACA /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93850629A8390200430ACA /* SideMenuViewModel.swift */; };
+		4C93850929A83DA700430ACA /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93850829A83DA700430ACA /* UserStatsView.swift */; };
+		4C93850B29A84BB500430ACA /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93850A29A84BB500430ACA /* SideMenuOptionRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		4C9384F629A7DBD200430ACA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4C9384F829A8075600430ACA /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		4C9384FD29A8093A00430ACA /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
+		4C93850229A838DE00430ACA /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		4C93850629A8390200430ACA /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		4C93850829A83DA700430ACA /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
+		4C93850A29A84BB500430ACA /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,7 @@
 		4C9384D829A6FC0A00430ACA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4C9384FF29A838B400430ACA /* SideMenu */,
 				4C9384DD29A6FC3B00430ACA /* Components */,
 				4C9384ED29A7D6EF00430ACA /* Profile */,
 				4C9384EC29A7D6E400430ACA /* Explore */,
@@ -302,8 +311,35 @@
 			isa = PBXGroup;
 			children = (
 				4C9384FD29A8093A00430ACA /* UserRowView.swift */,
+				4C93850829A83DA700430ACA /* UserStatsView.swift */,
 			);
 			path = Users;
+			sourceTree = "<group>";
+		};
+		4C9384FF29A838B400430ACA /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4C93850129A838C200430ACA /* ViewModel */,
+				4C93850029A838BC00430ACA /* Views */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		4C93850029A838BC00430ACA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C93850229A838DE00430ACA /* SideMenuView.swift */,
+				4C93850A29A84BB500430ACA /* SideMenuOptionRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C93850129A838C200430ACA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C93850629A8390200430ACA /* SideMenuViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,11 +478,15 @@
 				4C9384B129A6FA9C00430ACA /* ContentView.swift in Sources */,
 				4C9384E429A7BC5800430ACA /* PostRowView.swift in Sources */,
 				4C9384E129A6FC9E00430ACA /* FeedView.swift in Sources */,
+				4C93850329A838DE00430ACA /* SideMenuView.swift in Sources */,
 				4C9384AF29A6FA9C00430ACA /* Bridge1_0App.swift in Sources */,
 				4C9384EF29A7D84B00430ACA /* ExploreView.swift in Sources */,
+				4C93850729A8390200430ACA /* SideMenuViewModel.swift in Sources */,
 				4C9384FE29A8093A00430ACA /* UserRowView.swift in Sources */,
+				4C93850B29A84BB500430ACA /* SideMenuOptionRowView.swift in Sources */,
 				4C9384E729A7D25600430ACA /* MainTabView.swift in Sources */,
 				4C9384F129A7D86500430ACA /* NotificationsView.swift in Sources */,
+				4C93850929A83DA700430ACA /* UserStatsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

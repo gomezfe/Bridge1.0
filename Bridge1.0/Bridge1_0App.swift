@@ -11,8 +11,11 @@ import SwiftUI
 struct Bridge1_0App: App {
     var body: some Scene {
         WindowGroup {
-//            MainTabView()
-//            ProfileView()
+            //Adds a navigation bar to the entire app
+            NavigationView {
+                ContentView()
+
+            }
         }
     }
 }
