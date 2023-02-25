@@ -11,6 +11,7 @@ import Firebase
 @main
 struct Bridge1_0App: App {
     
+    @StateObject var viewModel = AuthViewModel()
     init() {
         FirebaseApp.configure()
     }
@@ -18,9 +19,9 @@ struct Bridge1_0App: App {
         WindowGroup {
             //Adds a navigation bar to the entire app
             NavigationView {
-//                ContentView()
-                LoginView()
+                ContentView()
             }
+            .environmentObject(viewModel)
         }
     }
 }

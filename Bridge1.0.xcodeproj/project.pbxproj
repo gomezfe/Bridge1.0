@@ -55,6 +55,7 @@
 		4C93854B29AA6F4000430ACA /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4C93854A29AA6F4000430ACA /* FirebaseRemoteConfigSwift */; };
 		4C93854D29AA6F4000430ACA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4C93854C29AA6F4000430ACA /* FirebaseStorage */; };
 		4C93854F29AA6F4100430ACA /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4C93854E29AA6F4100430ACA /* FirebaseStorageCombine-Community */; };
+		4C93855129AA7C8A00430ACA /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93855029AA7C8A00430ACA /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		4C93851C29A9E39800430ACA /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 		4C93851F29A9E5F000430ACA /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		4C93852329AA6D7E00430ACA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4C93855029AA7C8A00430ACA /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -449,6 +451,7 @@
 		4C93851529A9C4F400430ACA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4C93855029AA7C8A00430ACA /* AuthViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -636,6 +639,7 @@
 				4C93851929A9D0F000430ACA /* RegistrationView.swift in Sources */,
 				4C9384FE29A8093A00430ACA /* UserRowView.swift in Sources */,
 				4C93850B29A84BB500430ACA /* SideMenuOptionRowView.swift in Sources */,
+				4C93855129AA7C8A00430ACA /* AuthViewModel.swift in Sources */,
 				4C9384E729A7D25600430ACA /* MainTabView.swift in Sources */,
 				4C9384F129A7D86500430ACA /* NotificationsView.swift in Sources */,
 				4C93850929A83DA700430ACA /* UserStatsView.swift in Sources */,
