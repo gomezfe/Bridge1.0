@@ -32,6 +32,7 @@
 		4C93851729A9D0DB00430ACA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93851629A9D0DB00430ACA /* LoginView.swift */; };
 		4C93851929A9D0F000430ACA /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93851829A9D0F000430ACA /* RegistrationView.swift */; };
 		4C93851D29A9E39800430ACA /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93851C29A9E39800430ACA /* CustomInputField.swift */; };
+		4C93852029A9E5F000430ACA /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93851F29A9E5F000430ACA /* AuthHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		4C93851629A9D0DB00430ACA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4C93851829A9D0F000430ACA /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		4C93851C29A9E39800430ACA /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
+		4C93851F29A9E5F000430ACA /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +172,8 @@
 		4C9384D829A6FC0A00430ACA /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4C93851329A9C4CF00430ACA /* Authentication */,
 				4C9384DD29A6FC3B00430ACA /* Components */,
+				4C93851329A9C4CF00430ACA /* Authentication */,
 				4C93850C29A9AB8100430ACA /* UploadPost */,
 				4C9384FF29A838B400430ACA /* SideMenu */,
 				4C9384ED29A7D6EF00430ACA /* Profile */,
@@ -217,6 +219,7 @@
 		4C9384DD29A6FC3B00430ACA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4C93851E29A9E5D200430ACA /* Authentication */,
 				4C9384FC29A8092500430ACA /* Users */,
 				4C9384E229A7BC4300430ACA /* Posts */,
 				4C93851129A9AFE500430ACA /* TextArea.swift */,
@@ -405,6 +408,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		4C93851E29A9E5D200430ACA /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4C93851F29A9E5F000430ACA /* AuthHeaderView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -548,6 +559,7 @@
 				4C9384EF29A7D84B00430ACA /* ExploreView.swift in Sources */,
 				4C93851229A9AFE500430ACA /* TextArea.swift in Sources */,
 				4C93850729A8390200430ACA /* SideMenuViewModel.swift in Sources */,
+				4C93852029A9E5F000430ACA /* AuthHeaderView.swift in Sources */,
 				4C93851729A9D0DB00430ACA /* LoginView.swift in Sources */,
 				4C93851929A9D0F000430ACA /* RegistrationView.swift in Sources */,
 				4C9384FE29A8093A00430ACA /* UserRowView.swift in Sources */,

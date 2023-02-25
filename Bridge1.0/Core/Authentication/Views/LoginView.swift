@@ -16,21 +16,7 @@ struct LoginView: View {
         VStack {
             
             //Header View
-            VStack(alignment: .leading) {
-                HStack { Spacer() }
-                
-                Text("Hello.")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                
-                Text("Welcome Back")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-            }
-            .frame(height: 260)
-            .padding(.leading)
-            .background(Color("TealColor"))
-            .foregroundColor(.white)
+            AuthHeaderView(title1: "Hello.", title2: "Welcome back.")
             
             VStack(spacing: 40) {
                 //Fields that were created in the clas customInputField to make the view reusable
