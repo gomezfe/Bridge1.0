@@ -29,6 +29,9 @@
 		4C93850B29A84BB500430ACA /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93850A29A84BB500430ACA /* SideMenuOptionRowView.swift */; };
 		4C93851029A9ACCA00430ACA /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93850F29A9ACCA00430ACA /* NewPostView.swift */; };
 		4C93851229A9AFE500430ACA /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93851129A9AFE500430ACA /* TextArea.swift */; };
+		4C93851729A9D0DB00430ACA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93851629A9D0DB00430ACA /* LoginView.swift */; };
+		4C93851929A9D0F000430ACA /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93851829A9D0F000430ACA /* RegistrationView.swift */; };
+		4C93851D29A9E39800430ACA /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93851C29A9E39800430ACA /* CustomInputField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		4C93850A29A84BB500430ACA /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
 		4C93850F29A9ACCA00430ACA /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
 		4C93851129A9AFE500430ACA /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		4C93851629A9D0DB00430ACA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4C93851829A9D0F000430ACA /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		4C93851C29A9E39800430ACA /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,7 @@
 		4C9384D829A6FC0A00430ACA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4C93851329A9C4CF00430ACA /* Authentication */,
 				4C9384DD29A6FC3B00430ACA /* Components */,
 				4C93850C29A9AB8100430ACA /* UploadPost */,
 				4C9384FF29A838B400430ACA /* SideMenu */,
@@ -213,6 +220,7 @@
 				4C9384FC29A8092500430ACA /* Users */,
 				4C9384E229A7BC4300430ACA /* Posts */,
 				4C93851129A9AFE500430ACA /* TextArea.swift */,
+				4C93851C29A9E39800430ACA /* CustomInputField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -372,6 +380,31 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		4C93851329A9C4CF00430ACA /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4C93851529A9C4F400430ACA /* ViewModels */,
+				4C93851429A9C4EA00430ACA /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		4C93851429A9C4EA00430ACA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C93851629A9D0DB00430ACA /* LoginView.swift */,
+				4C93851829A9D0F000430ACA /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C93851529A9C4F400430ACA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -502,6 +535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C93851D29A9E39800430ACA /* CustomInputField.swift in Sources */,
 				4C9384F329A7D88D00430ACA /* MessagesView.swift in Sources */,
 				4C9384F729A7DBD200430ACA /* ProfileView.swift in Sources */,
 				4C9384F929A8075600430ACA /* FilterViewModel.swift in Sources */,
@@ -514,6 +548,8 @@
 				4C9384EF29A7D84B00430ACA /* ExploreView.swift in Sources */,
 				4C93851229A9AFE500430ACA /* TextArea.swift in Sources */,
 				4C93850729A8390200430ACA /* SideMenuViewModel.swift in Sources */,
+				4C93851729A9D0DB00430ACA /* LoginView.swift in Sources */,
+				4C93851929A9D0F000430ACA /* RegistrationView.swift in Sources */,
 				4C9384FE29A8093A00430ACA /* UserRowView.swift in Sources */,
 				4C93850B29A84BB500430ACA /* SideMenuOptionRowView.swift in Sources */,
 				4C9384E729A7D25600430ACA /* MainTabView.swift in Sources */,
