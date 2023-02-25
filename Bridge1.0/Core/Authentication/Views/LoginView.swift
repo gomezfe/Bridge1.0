@@ -23,7 +23,10 @@ struct LoginView: View {
                 //Fields that were created in the clas customInputField to make the view reusable
                 CustomInputField(imageName: "envelope", placeholderText: "Email", text: $email)
                 
-                CustomInputField(imageName: "lock", placeholderText: "Password", text: $password)
+                CustomInputField(imageName: "lock",
+                                 placeholderText: "Password",
+                                 isSecureField: true,
+                                 text: $password)
             }
             .padding(.horizontal, 32)
             .padding(.top, 44)
