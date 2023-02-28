@@ -56,6 +56,9 @@
 		4C93854D29AA6F4000430ACA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4C93854C29AA6F4000430ACA /* FirebaseStorage */; };
 		4C93854F29AA6F4100430ACA /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4C93854E29AA6F4100430ACA /* FirebaseStorageCombine-Community */; };
 		4C93855129AA7C8A00430ACA /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93855029AA7C8A00430ACA /* AuthViewModel.swift */; };
+		4C93855329AC13DA00430ACA /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93855229AC13DA00430ACA /* ProfilePhotoSelectorView.swift */; };
+		4CB7AFF829AD93A100C794D6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7AFF729AD93A100C794D6 /* ImagePicker.swift */; };
+		4CB7AFFA29AD9D9F00C794D6 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7AFF929AD9D9F00C794D6 /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,9 @@
 		4C93851F29A9E5F000430ACA /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		4C93852329AA6D7E00430ACA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4C93855029AA7C8A00430ACA /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		4C93855229AC13DA00430ACA /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
+		4CB7AFF729AD93A100C794D6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		4CB7AFF929AD9D9F00C794D6 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,7 @@
 		4C9384AD29A6FA9C00430ACA /* Bridge1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				4CB7AFF629AD938400C794D6 /* Utils */,
 				4C9384DB29A6FC2500430ACA /* Extensions */,
 				4C9384DA29A6FC1E00430ACA /* Model */,
 				4C9384D929A6FC1500430ACA /* Service */,
@@ -236,6 +243,7 @@
 		4C9384D929A6FC1500430ACA /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				4CB7AFF929AD9D9F00C794D6 /* ImageUploader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -444,6 +452,7 @@
 			children = (
 				4C93851629A9D0DB00430ACA /* LoginView.swift */,
 				4C93851829A9D0F000430ACA /* RegistrationView.swift */,
+				4C93855229AC13DA00430ACA /* ProfilePhotoSelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -462,6 +471,14 @@
 				4C93851F29A9E5F000430ACA /* AuthHeaderView.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		4CB7AFF629AD938400C794D6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4CB7AFF729AD93A100C794D6 /* ImagePicker.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -623,12 +640,14 @@
 			files = (
 				4C93851D29A9E39800430ACA /* CustomInputField.swift in Sources */,
 				4C9384F329A7D88D00430ACA /* MessagesView.swift in Sources */,
+				4CB7AFFA29AD9D9F00C794D6 /* ImageUploader.swift in Sources */,
 				4C9384F729A7DBD200430ACA /* ProfileView.swift in Sources */,
 				4C9384F929A8075600430ACA /* FilterViewModel.swift in Sources */,
 				4C9384B129A6FA9C00430ACA /* ContentView.swift in Sources */,
 				4C9384E429A7BC5800430ACA /* PostRowView.swift in Sources */,
 				4C9384E129A6FC9E00430ACA /* FeedView.swift in Sources */,
 				4C93850329A838DE00430ACA /* SideMenuView.swift in Sources */,
+				4C93855329AC13DA00430ACA /* ProfilePhotoSelectorView.swift in Sources */,
 				4C93851029A9ACCA00430ACA /* NewPostView.swift in Sources */,
 				4C9384AF29A6FA9C00430ACA /* Bridge1_0App.swift in Sources */,
 				4C9384EF29A7D84B00430ACA /* ExploreView.swift in Sources */,
@@ -641,6 +660,7 @@
 				4C93850B29A84BB500430ACA /* SideMenuOptionRowView.swift in Sources */,
 				4C93855129AA7C8A00430ACA /* AuthViewModel.swift in Sources */,
 				4C9384E729A7D25600430ACA /* MainTabView.swift in Sources */,
+				4CB7AFF829AD93A100C794D6 /* ImagePicker.swift in Sources */,
 				4C9384F129A7D86500430ACA /* NotificationsView.swift in Sources */,
 				4C93850929A83DA700430ACA /* UserStatsView.swift in Sources */,
 			);

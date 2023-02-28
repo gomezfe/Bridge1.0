@@ -14,9 +14,14 @@ struct RegistrationView: View {
     @State private var password = ""
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var viewModel: AuthViewModel
-
+    
     var body: some View {
         VStack{
+            
+//            NavigationLink(destination: ProfilePhotoSelectorView(), isActive: $viewModel.didAuthenticateUser, label: { })
+          
+
+
             AuthHeaderView(title1: "Get started.", title2: "Create your account.")
             
             VStack(spacing: 40) {
@@ -35,6 +40,7 @@ struct RegistrationView: View {
             
             Button {
                 viewModel.register(withEmail: email, password: password, fullname: fullname, username: username)
+                
             } label: {
                 Text("Sign Up")
                     .font(.headline)
@@ -62,6 +68,9 @@ struct RegistrationView: View {
             }
             .padding(.bottom, 32)
             .foregroundColor(Color("TealColor"))
+        }
+        .fullScreenCover(isPresented: $viewModel.didAuthenticateUser) {
+            ProfilePhotoSelectorView()
         }
         .ignoresSafeArea()
     }
