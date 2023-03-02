@@ -62,8 +62,8 @@ struct UserService {
                 do {
                     let data = try document.data(as: User.self)
                     print("DEBUG: User data from USerService is \(data)")
-//                    print("DEBUG: User data from USerService is \(data.username)")
-//                    print("DEBUG: User data from USerService is \(data.username)")
+                    print("DEBUG: User data from USerService is \(data.username)")
+                    print("DEBUG: User data from USerService is \(data.username)")
                     completion(data)
                 } catch {
                     print("Error decoding user data: \(error.localizedDescription)")
