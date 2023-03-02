@@ -59,6 +59,8 @@
 		4C93855329AC13DA00430ACA /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93855229AC13DA00430ACA /* ProfilePhotoSelectorView.swift */; };
 		4CB7AFF829AD93A100C794D6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7AFF729AD93A100C794D6 /* ImagePicker.swift */; };
 		4CB7AFFA29AD9D9F00C794D6 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7AFF929AD9D9F00C794D6 /* ImageUploader.swift */; };
+		4CB7B04329B1190000C794D6 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B04229B1190000C794D6 /* UserService.swift */; };
+		4CB7B04529B1328B00C794D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B04429B1328B00C794D6 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,8 @@
 		4C93855229AC13DA00430ACA /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		4CB7AFF729AD93A100C794D6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		4CB7AFF929AD9D9F00C794D6 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		4CB7B04229B1190000C794D6 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		4CB7B04429B1328B00C794D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				4CB7AFF929AD9D9F00C794D6 /* ImageUploader.swift */,
+				4CB7B04229B1190000C794D6 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 		4C9384DA29A6FC1E00430ACA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4CB7B04429B1328B00C794D6 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -643,7 +649,9 @@
 				4CB7AFFA29AD9D9F00C794D6 /* ImageUploader.swift in Sources */,
 				4C9384F729A7DBD200430ACA /* ProfileView.swift in Sources */,
 				4C9384F929A8075600430ACA /* FilterViewModel.swift in Sources */,
+				4CB7B04529B1328B00C794D6 /* User.swift in Sources */,
 				4C9384B129A6FA9C00430ACA /* ContentView.swift in Sources */,
+				4CB7B04329B1190000C794D6 /* UserService.swift in Sources */,
 				4C9384E429A7BC5800430ACA /* PostRowView.swift in Sources */,
 				4C9384E129A6FC9E00430ACA /* FeedView.swift in Sources */,
 				4C93850329A838DE00430ACA /* SideMenuView.swift in Sources */,

@@ -20,7 +20,7 @@ struct LoginView: View {
             AuthHeaderView(title1: "Hello.", title2: "Welcome back.")
             
             VStack(spacing: 40) {
-                //Fields that were created in the clas customInputField to make the view reusable
+                //Fields that were created in the class customInputField to make the view reusable
                 CustomInputField(imageName: "envelope", placeholderText: "Email", text: $email)
                 
                 CustomInputField(imageName: "lock",

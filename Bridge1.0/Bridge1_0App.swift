@@ -19,9 +19,9 @@ struct Bridge1_0App: App {
         WindowGroup {
             //Adds a navigation bar to the entire app
             NavigationView {
-//                ContentView()
-                ProfilePhotoSelectorView()
-            }
+                ContentView()
+//                ProfilePhotoSelectorView()
+                }
             .environmentObject(viewModel)
         }
     }
