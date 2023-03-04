@@ -62,6 +62,7 @@
 		4CB7B04329B1190000C794D6 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B04229B1190000C794D6 /* UserService.swift */; };
 		4CB7B04529B1328B00C794D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B04429B1328B00C794D6 /* User.swift */; };
 		4CB7B04829B1574F00C794D6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4CB7B04729B1574F00C794D6 /* Kingfisher */; };
+		4CB7B04C29B2A99B00C794D6 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B04B29B2A99B00C794D6 /* ExploreViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		4CB7AFF929AD9D9F00C794D6 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		4CB7B04229B1190000C794D6 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		4CB7B04429B1328B00C794D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4CB7B04B29B2A99B00C794D6 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,6 +377,7 @@
 		4C9384FA29A8087500430ACA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4CB7B04B29B2A99B00C794D6 /* ExploreViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -668,6 +671,7 @@
 				4C93852029A9E5F000430ACA /* AuthHeaderView.swift in Sources */,
 				4C93851729A9D0DB00430ACA /* LoginView.swift in Sources */,
 				4C93851929A9D0F000430ACA /* RegistrationView.swift in Sources */,
+				4CB7B04C29B2A99B00C794D6 /* ExploreViewModel.swift in Sources */,
 				4C9384FE29A8093A00430ACA /* UserRowView.swift in Sources */,
 				4C93850B29A84BB500430ACA /* SideMenuOptionRowView.swift in Sources */,
 				4C93855129AA7C8A00430ACA /* AuthViewModel.swift in Sources */,

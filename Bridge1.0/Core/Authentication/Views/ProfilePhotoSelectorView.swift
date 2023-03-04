@@ -54,7 +54,7 @@ struct ProfilePhotoSelectorView: View {
                             viewModel.uploadProfileImage(selectedImage)
                            
                             isDismissing = true
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
                                 withAnimation {
                                     presentationMode.wrappedValue.dismiss()
                                 }

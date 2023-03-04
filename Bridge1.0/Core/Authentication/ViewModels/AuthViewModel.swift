@@ -31,8 +31,7 @@ class AuthViewModel: ObservableObject {
             
             guard let user = result?.user else { return }
             self.userSession = user
-            print("DEBUG: Did log user in...")
-        }
+            self.fetchUser()        }
     }
     
     func register(withEmail email: String, password: String, fullname: String, username: String) {
@@ -73,6 +72,7 @@ class AuthViewModel: ObservableObject {
                 .document(uid)
                 .updateData(["profileImageUrl": profileImageUrl]) { _ in
                     self.userSession = self.tempUserSession
+                    self.fetchUser()
                 }
         }
     }
