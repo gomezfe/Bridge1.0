@@ -52,17 +52,17 @@ struct ProfileView: View {
                                 .offset(y: -70)
                             
                             //TODO: Destination to be updated
-                            NavigationLink(destination: PostRowView()) {
-                                Text("Change Profile Photo")
-                            }
-                            .font(.headline)
-                            .foregroundColor(Color(.black))
-                            .frame(width: 200, height: 30)
-                            .background(Color(.white))
-                            .clipShape(Capsule())
-                            .padding()
-                            .offset(y: -85)
-                            
+//                            NavigationLink(destination: PostRowView()) {
+//                                Text("Change Profile Photo")
+//                            }
+//                            .font(.headline)
+//                            .foregroundColor(Color(.black))
+//                            .frame(width: 200, height: 30)
+//                            .background(Color(.white))
+//                            .clipShape(Capsule())
+//                            .padding()
+//                            .offset(y: -85)
+//                            
                             //TODO: To be updated to initialize user statsView
                             UserStatsView()
                                 .offset(y: -80)

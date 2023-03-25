@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct NewPostView: View {
     @Environment(\.presentationMode) var presentationMode
     @State private var caption = ""
+    @EnvironmentObject var authViewModel: AuthViewModel
+    @ObservedObject var viewModel = UploadPostViewModel()
 
     var body: some View {
         VStack {
@@ -24,7 +27,7 @@ struct NewPostView: View {
                 Spacer()
                 
                 Button {
-                    print("Post")
+                    viewModel.uploadPost(withCaption: caption)
                 } label: {
                     Text("Post")
                         .padding(.horizontal)
@@ -37,15 +40,26 @@ struct NewPostView: View {
             .padding()
             
             HStack(alignment: .top) {
-                Circle()
-                    .frame(width: 64, height: 64)
+                
+                if let user = authViewModel.currentUser {
+//                    Circle()
+                KFImage(URL(string: user.profileImageUrl))
+                        .resizable()
+                        .scaledToFill()
+                        .clipShape(Circle())
+                        .frame(width: 64, height: 64)
+                }
                 TextArea("Make your post", text: $caption)
 
                   
             }
             .padding()
         }
-
+        .onReceive(viewModel.$didUploadPost) { success in
+            if success {
+                presentationMode.wrappedValue.dismiss()
+            }
+        }
     }
 }
 

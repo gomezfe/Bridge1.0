@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C55538F29CE17D400B63E72 /* PostRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C55538E29CE17D400B63E72 /* PostRowViewModel.swift */; };
 		4C9384AF29A6FA9C00430ACA /* Bridge1_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9384AE29A6FA9C00430ACA /* Bridge1_0App.swift */; };
 		4C9384B129A6FA9C00430ACA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9384B029A6FA9C00430ACA /* ContentView.swift */; };
 		4C9384B329A6FA9F00430ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C9384B229A6FA9F00430ACA /* Assets.xcassets */; };
@@ -63,6 +64,11 @@
 		4CB7B04529B1328B00C794D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B04429B1328B00C794D6 /* User.swift */; };
 		4CB7B04829B1574F00C794D6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4CB7B04729B1574F00C794D6 /* Kingfisher */; };
 		4CB7B04C29B2A99B00C794D6 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B04B29B2A99B00C794D6 /* ExploreViewModel.swift */; };
+		4CB7B04E29B2D0C000C794D6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B04D29B2D0C000C794D6 /* SearchBar.swift */; };
+		4CB7B05029B3B45800C794D6 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B04F29B3B45800C794D6 /* PostService.swift */; };
+		4CB7B05229B3B57000C794D6 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B05129B3B57000C794D6 /* UploadPostViewModel.swift */; };
+		4CC58C6529C3E1C20060C495 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC58C6429C3E1C10060C495 /* FeedViewModel.swift */; };
+		4CC58C6729C3E2E60060C495 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC58C6629C3E2E60060C495 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +89,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C55538E29CE17D400B63E72 /* PostRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowViewModel.swift; sourceTree = "<group>"; };
 		4C9384AB29A6FA9C00430ACA /* Bridge1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bridge1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9384AE29A6FA9C00430ACA /* Bridge1_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge1_0App.swift; sourceTree = "<group>"; };
 		4C9384B029A6FA9C00430ACA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +127,11 @@
 		4CB7B04229B1190000C794D6 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		4CB7B04429B1328B00C794D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4CB7B04B29B2A99B00C794D6 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		4CB7B04D29B2D0C000C794D6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		4CB7B04F29B3B45800C794D6 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		4CB7B05129B3B57000C794D6 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
+		4CC58C6429C3E1C10060C495 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		4CC58C6629C3E2E60060C495 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +181,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C55538C29CE17A000B63E72 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C9384E329A7BC5800430ACA /* PostRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C55538D29CE17AB00B63E72 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C55538E29CE17D400B63E72 /* PostRowViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		4C9384A229A6FA9C00430ACA = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +281,7 @@
 			children = (
 				4CB7AFF929AD9D9F00C794D6 /* ImageUploader.swift */,
 				4CB7B04229B1190000C794D6 /* UserService.swift */,
+				4CB7B04F29B3B45800C794D6 /* PostService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -261,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				4CB7B04429B1328B00C794D6 /* User.swift */,
+				4CC58C6629C3E2E60060C495 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,6 +319,7 @@
 				4C9384E229A7BC4300430ACA /* Posts */,
 				4C93851129A9AFE500430ACA /* TextArea.swift */,
 				4C93851C29A9E39800430ACA /* CustomInputField.swift */,
+				4CB7B04D29B2D0C000C794D6 /* SearchBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -296,6 +327,7 @@
 		4C9384DE29A6FC6700430ACA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4CC58C6429C3E1C10060C495 /* FeedViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -311,7 +343,8 @@
 		4C9384E229A7BC4300430ACA /* Posts */ = {
 			isa = PBXGroup;
 			children = (
-				4C9384E329A7BC5800430ACA /* PostRowView.swift */,
+				4C55538D29CE17AB00B63E72 /* ViewModel */,
+				4C55538C29CE17A000B63E72 /* Views */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -445,6 +478,7 @@
 		4C93850E29A9AB9500430ACA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4CB7B05129B3B57000C794D6 /* UploadPostViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -663,22 +697,28 @@
 				4C9384E129A6FC9E00430ACA /* FeedView.swift in Sources */,
 				4C93850329A838DE00430ACA /* SideMenuView.swift in Sources */,
 				4C93855329AC13DA00430ACA /* ProfilePhotoSelectorView.swift in Sources */,
+				4CC58C6729C3E2E60060C495 /* Post.swift in Sources */,
 				4C93851029A9ACCA00430ACA /* NewPostView.swift in Sources */,
 				4C9384AF29A6FA9C00430ACA /* Bridge1_0App.swift in Sources */,
+				4CC58C6529C3E1C20060C495 /* FeedViewModel.swift in Sources */,
 				4C9384EF29A7D84B00430ACA /* ExploreView.swift in Sources */,
 				4C93851229A9AFE500430ACA /* TextArea.swift in Sources */,
 				4C93850729A8390200430ACA /* SideMenuViewModel.swift in Sources */,
 				4C93852029A9E5F000430ACA /* AuthHeaderView.swift in Sources */,
+				4CB7B04E29B2D0C000C794D6 /* SearchBar.swift in Sources */,
 				4C93851729A9D0DB00430ACA /* LoginView.swift in Sources */,
 				4C93851929A9D0F000430ACA /* RegistrationView.swift in Sources */,
+				4C55538F29CE17D400B63E72 /* PostRowViewModel.swift in Sources */,
 				4CB7B04C29B2A99B00C794D6 /* ExploreViewModel.swift in Sources */,
 				4C9384FE29A8093A00430ACA /* UserRowView.swift in Sources */,
 				4C93850B29A84BB500430ACA /* SideMenuOptionRowView.swift in Sources */,
 				4C93855129AA7C8A00430ACA /* AuthViewModel.swift in Sources */,
+				4CB7B05029B3B45800C794D6 /* PostService.swift in Sources */,
 				4C9384E729A7D25600430ACA /* MainTabView.swift in Sources */,
 				4CB7AFF829AD93A100C794D6 /* ImagePicker.swift in Sources */,
 				4C9384F129A7D86500430ACA /* NotificationsView.swift in Sources */,
 				4C93850929A83DA700430ACA /* UserStatsView.swift in Sources */,
+				4CB7B05229B3B57000C794D6 /* UploadPostViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,7 +805,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -819,7 +859,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
