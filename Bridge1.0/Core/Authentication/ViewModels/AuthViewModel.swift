@@ -16,6 +16,7 @@ class AuthViewModel: ObservableObject {
     
     private let service =  UserService()
     
+    
     init() {
         self.userSession = Auth.auth().currentUser
         self.fetchUser()
@@ -76,6 +77,49 @@ class AuthViewModel: ObservableObject {
                 }
         }
     }
+    
+    func uploadBackgroundColor(color: Color) {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        
+        if UIColor(color) != nil{
+             var uiColor = UIColor(color)
+            
+            var red: CGFloat = 0
+            var green: CGFloat = 0
+            var blue: CGFloat = 0
+            var alpha: CGFloat = 0
+
+            uiColor.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+            
+            let data : [String: Any] = [
+                "uid": uid,
+                "red": Double(red),
+                "green": Double(green),
+                "blue": Double(blue)
+            ]
+            
+            Firestore.firestore().collection("colors").document()
+                    .setData(data) { error in
+                        if let error = error {
+                            print("DEBUG: Failed to upload color with error: \(error.localizedDescription)")
+                        return
+        }
+    }
+            
+}
+       
+   
+//               let data : [String: Any] = ["uid": uid,
+//                           "color": color]
+        
+//            Firestore.firestore().collection("colors").document()
+//                    .setData(data) { error in
+//                        if let error = error {
+//                            print("DEBUG: Failed to upload color with error: \(error.localizedDescription)")
+//                        return
+//        }
+//    }
+}
     
     func fetchUser() {
         guard let uid = self.userSession?.uid else { return }

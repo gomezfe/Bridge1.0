@@ -67,6 +67,7 @@
 		4CB7B04E29B2D0C000C794D6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B04D29B2D0C000C794D6 /* SearchBar.swift */; };
 		4CB7B05029B3B45800C794D6 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B04F29B3B45800C794D6 /* PostService.swift */; };
 		4CB7B05229B3B57000C794D6 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B05129B3B57000C794D6 /* UploadPostViewModel.swift */; };
+		4CC4B10B29CF912900CBFCD7 /* ColorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4B10A29CF912900CBFCD7 /* ColorService.swift */; };
 		4CC58C6529C3E1C20060C495 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC58C6429C3E1C10060C495 /* FeedViewModel.swift */; };
 		4CC58C6729C3E2E60060C495 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC58C6629C3E2E60060C495 /* Post.swift */; };
 /* End PBXBuildFile section */
@@ -130,6 +131,7 @@
 		4CB7B04D29B2D0C000C794D6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		4CB7B04F29B3B45800C794D6 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		4CB7B05129B3B57000C794D6 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
+		4CC4B10A29CF912900CBFCD7 /* ColorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorService.swift; sourceTree = "<group>"; };
 		4CC58C6429C3E1C10060C495 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		4CC58C6629C3E2E60060C495 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -282,6 +284,7 @@
 				4CB7AFF929AD9D9F00C794D6 /* ImageUploader.swift */,
 				4CB7B04229B1190000C794D6 /* UserService.swift */,
 				4CB7B04F29B3B45800C794D6 /* PostService.swift */,
+				4CC4B10A29CF912900CBFCD7 /* ColorService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -719,6 +722,7 @@
 				4C9384F129A7D86500430ACA /* NotificationsView.swift in Sources */,
 				4C93850929A83DA700430ACA /* UserStatsView.swift in Sources */,
 				4CB7B05229B3B57000C794D6 /* UploadPostViewModel.swift in Sources */,
+				4CC4B10B29CF912900CBFCD7 /* ColorService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

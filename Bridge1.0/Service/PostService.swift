@@ -42,6 +42,7 @@ struct PostService {
 }
 
 extension PostService {
+    
     func likePost(_ post: Post, completion: @escaping() -> Void) {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         guard let postId = post.id else { return }
