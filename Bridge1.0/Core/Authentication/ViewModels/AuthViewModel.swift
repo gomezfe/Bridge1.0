@@ -77,18 +77,22 @@ class AuthViewModel: ObservableObject {
                 }
         }
     }
-    
+            
     func uploadBackgroundColor(color: Color) {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
+        let db = Firestore.firestore()
+        let collectionRef = db.collection("colors")
+        
+        
         if UIColor(color) != nil{
-             var uiColor = UIColor(color)
+            var uiColor = UIColor(color)
             
             var red: CGFloat = 0
             var green: CGFloat = 0
             var blue: CGFloat = 0
             var alpha: CGFloat = 0
-
+            
             uiColor.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
             
             let data : [String: Any] = [
@@ -98,29 +102,32 @@ class AuthViewModel: ObservableObject {
                 "blue": Double(blue)
             ]
             
-            Firestore.firestore().collection("colors").document()
-                    .setData(data) { error in
-                        if let error = error {
-                            print("DEBUG: Failed to upload color with error: \(error.localizedDescription)")
-                        return
+            collectionRef
+                .getDocuments { document, error in
+                    if document!.count > 0 {
+                        print("DEBUG: A document has been found \(document?.count)")
+                        
+                        let userLikesRef = Firestore.firestore().collection("colors").document(uid)
+                        
+                        Firestore.firestore().collection("colors").document(uid)
+                            .setData(data)
+                        
+                    } else {
+                        print("DEBUG: A document has not been found")
+                        
+                        Firestore.firestore().collection("colors").document(uid)
+                            .setData(data, merge: true) { error in
+                                if let error = error {
+                                    print("DEBUG: Failed to upload color with error: \(error.localizedDescription)")
+                                    return
+                                }
+                            }
+                        
+                    }
+                }
         }
-    }
-            
-}
-       
-   
-//               let data : [String: Any] = ["uid": uid,
-//                           "color": color]
         
-//            Firestore.firestore().collection("colors").document()
-//                    .setData(data) { error in
-//                        if let error = error {
-//                            print("DEBUG: Failed to upload color with error: \(error.localizedDescription)")
-//                        return
-//        }
-//    }
-}
-    
+    }
     func fetchUser() {
         guard let uid = self.userSession?.uid else { return }
         
