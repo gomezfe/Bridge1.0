@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainTabView: View {
+    
+    @EnvironmentObject var authViewModel: AuthViewModel
     @State private var selectedIndex = 0
     
     var body: some View {
@@ -43,6 +45,15 @@ struct MainTabView: View {
                 .tabItem {
                     Image(systemName: "envelope")
                 }.tag(3)
+            
+            
+            ProfileView()
+           .onTapGesture {
+               self.selectedIndex = 4
+                }
+                .tabItem {
+                    Image(systemName: "person.circle.fill")
+                }.tag(4)
         }
     }
 }

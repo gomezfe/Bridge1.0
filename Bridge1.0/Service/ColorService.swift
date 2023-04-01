@@ -5,38 +5,85 @@
 //  Created by Felipe Gomez on 3/25/23.
 //
 
-import Foundation
+import Firebase
 
+struct ColorService {
+    
+//    func fetchColors(withUid uid: String, completion: @escaping (User?) -> Void) {
 //
-//struct ColorService {
+//        let db = Firestore.firestore()
+//        let userRef = db.collection("colors").document(uid)
 //
-//    func uploadPost(caption: String, completion: @escaping(Bool) -> Void) {
-//        guard let uid = Auth.auth().currentUser?.uid else { return }
-//
-//        let data = ["uid": uid,
-//                    "caption": caption,
-//                    "likes": 0,
-//                    "timestamp": Timestamp(date: Date())] as [String : Any]
-//
-//        Firestore.firestore().collection("posts").document()
-//            .setData(data) { error in
-//                if let error = error {
-//                    print("DEBUG: Failed to upload post with error: \(error.localizedDescription)")
-//                    completion(false)
-//                    return
+//        userRef.getDocument { (document, error) in
+//            if let document =  document, document.exists {
+//                // Convert document data to UserModel object
+//                do {
+//                    let data = try document.data(as: User.self)
+//                    print("DEBUG: User data from USerService is \(data)")
+//                    print("DEBUG: User data from USerService is \(data.username)")
+//                    print("DEBUG: User data from USerService is \(data.username)")
+//                    completion(data)
+//                } catch {
+//                    print("Error decoding user data: \(error.localizedDescription)")
+//                    completion(nil)
+//                }
+//            } else {
+//                print("User does not exist")
+//                completion(nil)
 //            }
-//        completion(true)
 //        }
+//
 //    }
+    
+//    func fetchColors(withUid uid: String, completion: @escaping (ColorsModel?) -> Void) {
 //
-//    func fetchPost(completion: @escaping([Post]) -> Void) {
-//        Firestore.firestore().collection("posts")
-//            .order(by: "timestamp", descending: true)
-//            .getDocuments { snapshot, _ in
-//            guard let documents = snapshot?.documents else { return }
-//            let post = documents.compactMap({ try? $0.data(as: Post.self) })
-//            completion(post)
+//        let db = Firestore.firestore()
+//        let userRef = db.collection("colors").document(uid)
 //
+//        userRef.getDocument { (document, error) in
+//            if let document =  document, document.exists {
+//                // Convert document data to UserModel object
+//                do {
+//                    let data = try document.data(as: ColorsModel.self)
+//                    print("DEBUG: User data from COLORSERVICE is \(data.red)")
+//                    completion(data)
+//
+//                } catch {
+//                    print("Error decoding Color data: \(error.localizedDescription)")
+//                    completion(nil)
+//                }
+//            } else {
+//                print("Color does not exist")
+//                completion(nil)
+//            }
 //        }
+//
 //    }
-//}
+    
+    
+    func fetchColors(withUid uid: String, completion: @escaping (ColorsModel?) -> Void) {
+        
+        let db = Firestore.firestore()
+        let userRef = db.collection("colors").document(uid)
+        
+        userRef.getDocument { (document, error) in
+            if let document =  document, document.exists {
+                // Convert document data to UserModel object
+                do {
+                    let data = try document.data(as: ColorsModel.self)
+                    print("DEBUG: User data from COLORSERVICE is \(data.favoriteColor)")
+                    completion(data)
+               
+                } catch {
+                    print("Error decoding Color data: \(error.localizedDescription)")
+                    completion(nil)
+                }
+            } else {
+                print("Color does not exist")
+                completion(nil)
+            }
+        }
+        
+    }
+}
+

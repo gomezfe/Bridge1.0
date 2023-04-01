@@ -67,9 +67,12 @@
 		4CB7B04E29B2D0C000C794D6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B04D29B2D0C000C794D6 /* SearchBar.swift */; };
 		4CB7B05029B3B45800C794D6 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B04F29B3B45800C794D6 /* PostService.swift */; };
 		4CB7B05229B3B57000C794D6 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B05129B3B57000C794D6 /* UploadPostViewModel.swift */; };
+		4CB7D60529D74621003E3C7C /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7D60429D74620003E3C7C /* LogoutView.swift */; };
+		4CB7D60729D77B67003E3C7C /* ProfileError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7D60629D77B67003E3C7C /* ProfileError.swift */; };
 		4CC4B10B29CF912900CBFCD7 /* ColorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4B10A29CF912900CBFCD7 /* ColorService.swift */; };
 		4CC58C6529C3E1C20060C495 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC58C6429C3E1C10060C495 /* FeedViewModel.swift */; };
 		4CC58C6729C3E2E60060C495 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC58C6629C3E2E60060C495 /* Post.swift */; };
+		4CFCE97929D4BAEF00DA66E2 /* ColorsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCE97829D4BAEF00DA66E2 /* ColorsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,9 +134,12 @@
 		4CB7B04D29B2D0C000C794D6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		4CB7B04F29B3B45800C794D6 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		4CB7B05129B3B57000C794D6 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
+		4CB7D60429D74620003E3C7C /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
+		4CB7D60629D77B67003E3C7C /* ProfileError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileError.swift; sourceTree = "<group>"; };
 		4CC4B10A29CF912900CBFCD7 /* ColorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorService.swift; sourceTree = "<group>"; };
 		4CC58C6429C3E1C10060C495 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		4CC58C6629C3E2E60060C495 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4CFCE97829D4BAEF00DA66E2 /* ColorsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,13 +273,15 @@
 				4C9384DD29A6FC3B00430ACA /* Components */,
 				4C93851329A9C4CF00430ACA /* Authentication */,
 				4C93850C29A9AB8100430ACA /* UploadPost */,
+				4C9384E529A7D24000430ACA /* MainTab */,
 				4C9384FF29A838B400430ACA /* SideMenu */,
 				4C9384ED29A7D6EF00430ACA /* Profile */,
 				4C9384EC29A7D6E400430ACA /* Explore */,
 				4C9384EA29A7D6D100430ACA /* Notifications */,
 				4C9384E929A7D6CE00430ACA /* Messages */,
-				4C9384E529A7D24000430ACA /* MainTab */,
 				4C9384DC29A6FC3500430ACA /* Feed */,
+				4CB7D60429D74620003E3C7C /* LogoutView.swift */,
+				4CB7D60629D77B67003E3C7C /* ProfileError.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -294,6 +302,7 @@
 			children = (
 				4CB7B04429B1328B00C794D6 /* User.swift */,
 				4CC58C6629C3E2E60060C495 /* Post.swift */,
+				4CFCE97829D4BAEF00DA66E2 /* ColorsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -689,17 +698,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C93851D29A9E39800430ACA /* CustomInputField.swift in Sources */,
+				4CB7D60529D74621003E3C7C /* LogoutView.swift in Sources */,
 				4C9384F329A7D88D00430ACA /* MessagesView.swift in Sources */,
 				4CB7AFFA29AD9D9F00C794D6 /* ImageUploader.swift in Sources */,
 				4C9384F729A7DBD200430ACA /* ProfileView.swift in Sources */,
 				4C9384F929A8075600430ACA /* FilterViewModel.swift in Sources */,
 				4CB7B04529B1328B00C794D6 /* User.swift in Sources */,
 				4C9384B129A6FA9C00430ACA /* ContentView.swift in Sources */,
+				4CFCE97929D4BAEF00DA66E2 /* ColorsModel.swift in Sources */,
 				4CB7B04329B1190000C794D6 /* UserService.swift in Sources */,
 				4C9384E429A7BC5800430ACA /* PostRowView.swift in Sources */,
 				4C9384E129A6FC9E00430ACA /* FeedView.swift in Sources */,
 				4C93850329A838DE00430ACA /* SideMenuView.swift in Sources */,
 				4C93855329AC13DA00430ACA /* ProfilePhotoSelectorView.swift in Sources */,
+				4CB7D60729D77B67003E3C7C /* ProfileError.swift in Sources */,
 				4CC58C6729C3E2E60060C495 /* Post.swift in Sources */,
 				4C93851029A9ACCA00430ACA /* NewPostView.swift in Sources */,
 				4C9384AF29A6FA9C00430ACA /* Bridge1_0App.swift in Sources */,
